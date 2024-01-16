@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="rk-poky" path="yocto/poky" revision="50ed7d61f9292dfd1aeadf088b664490cc9b1036" clone-depth="1">
+    <linkfile src="scripts" dest="yocto/scripts" />
+    <linkfile src="bitbake" dest="yocto/bitbake" />
+    <linkfile src="meta-poky" dest="yocto/meta-poky" />
+    <linkfile src=".templateconf" dest="yocto/.templateconf" />
+    <linkfile src="oe-init-build-env" dest="yocto/oe-init-build-env" />
+  </project>
+  <project name="rk-yocto-build" path="yocto/build" revision="ed23aec5136a9ff1009ed92780b6b20d8d721dd6" clone-depth="1"/>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="docs" path="docs" revision="bbad6e6724465a24493c5b21c621b86435b7428d" clone-depth="1">
+    <linkfile src="Common/MCU/Rockchip_RK3399_Developer_Guide_MCU_CN.pdf" dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_MCU_CN.pdf"/>
+    <linkfile src="Common/PCIe/Rockchip_RK3399_Developer_Guide_PCIe_CN.pdf" dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_PCIe_CN.pdf"/>
+    <linkfile src="Common/USB/Rockchip_RK3399_Developer_Guide_USB_DTS_CN.pdf" dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_USB_DTS_CN.pdf"/>
+    <linkfile src="Common/TRUST/Rockchip_RK3399_Developer_Guide_System_Suspend_CN.pdf" dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_System_Suspend_CN.pdf"/>
+    <linkfile src="Rockchip_Developer_Guide_Linux_Software_CN.pdf" dest="docs/.Socs/RK3399/Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+    <linkfile src=".Socs/RK3399" dest="docs/RK3399"/>
+  </project>  
+</manifest>

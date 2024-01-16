@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="leavs" fetch="https://github.com/leavs"/>
+  <default remote="leavs" sync-j="4"/>
+
+  <project name="kernel"     path="kernel"     revision="958d44188100f47841eed119bd7d732830da8d2a"/>
+  <project name="u-boot"     path="u-boot"     revision="69c83a551faf5fe97e92497eedc042272c2c37c4"/>
+  <project name="rkbin"      path="rkbin"      revision="00120e700aea757efbe7d827b3f038fba86ecc47"/>
+  <project name="armgcc"  path="prebuilts"  revision="9de9b6a16d325787acf2cd94ccd751e57df852aa"/>
+  <project name="rk-build"  path="build"  revision="6b5ec82ffc44c5f0ab45ab4ed0a1e9635aff85ad"/>
+  <project name="buildroot"  path="buildroot"  revision="d07a40d0d7351dfc93fbdecae25bc3b7ab3e4994">
+    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+
+  <project name="rk-multivideoplayer" path="app/multivideoplayer" revision="7ad1fda4d223030155692bfd83046accbd8da477"/>
+  <project name="rk-qcamera" path="app/qcamera" revision="788fbb8d13e2c97230a3250a2a6d4b4660d69e0c"/>
+  <project name="rk-qfm" path="app/qfm" revision="d4e433715e45b80762e318d3fe6d9ff41e5dc224"/>
+  <project name="rk-qlauncher" path="app/QLauncher" revision="a38f1eea74ced085765e8fb279d43b5f15731912"/>
+  <project name="rk-qplayer" path="app/qplayer" revision="a415de662a17a4bbb6267494cf5bace9704272d8"/>
+  <project name="rk-qsetting" path="app/qsetting" revision="a2aae18e2d2da6326a370f3272fd83d30c188e75"/>
+  
+  <project name="alsa-config" path="external/alsa-config" revision="3cd28055044c975afeb513da57df885d9ef64c97"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="290abaf50faa3a55cb083ef2b9156a6776221a55"/>
+  <project name="chromium" path="external/chromium" revision="c0b2ef71ae7c4ddbd86a9a7d6b6c4b0766e808ed"/>
+  <project name="drm-cursor" path="external/drm-cursor" revision="b52990ac720a1e667ba97ea16949fb54ff02c129"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="cd22fceb897b7e11a2957459f19d73209485ce75"/>
+  <project name="libmali" path="external/libmali" revision="b9d79c06d8a517ac81bc38a56449995e9f65b5d7"/>
+  <project name="linux-ppp-scripts" path="external/linux-ppp-scripts" revision="99e8ffce44bb8c17e09da4fd61ec29733207a11b"/>
+  <project name="linux-rga" path="external/linux-rga" revision="7216a1add2cac717289d0197ca871bde636a66d9"/>
+  <project name="mpp" path="external/mpp" revision="3e8748b8fb7e654eefc08ba7b991b0341008a473"/>
+  <project name="quectel-CM" path="external/quectel-CM" revision="52552f7a553d26c7c3d2a278ce8abd19a6509512"/>
+  <project name="recovery" path="external/recovery" revision="271b8a23bc19c32ef82cafa7667ed202f33940b1"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="372ed539459a3e6c9f8d6c5302cdcf5db72d1a0e"/>
+  <project name="rkscript" path="external/rkscript" revision="4c34d7413f118789f6be7c9549c0f5a5fe032648"/>
+  <project name="rktoolkit" path="external/rktoolkit" revision="64121a729d4d9a9c966b7ed3961fb1501e98d790"/>
+  <project name="rkupdate" path="external/rkupdate" revision="1447df57898c7d94dc8e50bd5b81c81c239e1f63"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="c1cce3879c7bd8f1d4c8c4b90b8bbee847e6ad65"/>
+  <project name="rkwifibt-app" path="external/rkwifibt-app" revision="b327dbfe327dd59856bb4176e41e94fc06fa8f32"/>
+  <project name="rockchip-test" path="external/rockchip-test" revision="8eddaf85e39711fc66685ed9e58e1a955a69876c"/>
+  <project name="rockit" path="external/rockit" revision="939ef206d8dce12f7a47ed422d19512ffee26cc8"/>
+  <project name="security" path="external/security" revision="732fd0feeb76fab3b2c39cca479fb316b194cfed"/>
+  <project name="xserver" path="external/xserver" revision="c65143d76838990f3dfff1d39b0d62d4ca06f569"/>
+  
+  <project name="rockchip_device"  path="device/rockchip"  revision="eaf608a59e20b61467962f203b6e57ca25b21c5d">
+    <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
+    <linkfile src="common/build.sh" dest="build.sh"/>
+    <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
+    <linkfile src="rk3399" dest="device/rockchip/.target_product"/>
+  </project>
+
+  <project name="tools"      path="tools"      revision="6190df6b5225ac9b61446a8105454153bf3553f9">
+    <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3399-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
+    <linkfile src="windows/RKDevTool/rockdev/rk3399-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
+    <linkfile src="windows/RKDevTool/rockdev/rk3399-mkupdate.bat" dest="tools/windows/RKDevTool/rockdev/mkupdate.bat"/>
+    <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
+    <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
+  </project>
+
+  <project name="rk-meta-browser" path="yocto/meta-browser" revision="7845c063044d816bc24d079427c2450aff2c0b3c" clone-depth="1"/>
+  <project name="rk-meta-clang" path="yocto/meta-clang" revision="9c14985754e8b26b8b41cd199ae9cfc60a48bf69" clone-depth="1"/>
+  <project name="rk-meta-openembedded" path="yocto/meta-openembedded" revision="d5a53f234cbaca3cea7619673ad59b01fee8dae0" clone-depth="1"/>
+  <project name="rk-meta-qt5" path="yocto/meta-qt5" revision="9e7ca4454bd06b02fc2b0547619994459c0a325c" clone-depth="1"/>
+  <project name="rk-meta-rockchip" path="yocto/meta-rockchip" revision="7b053b9a525fe91207de5eb9ddb83216db91a12d" clone-depth="1"/>
+
+</manifest>
+
+

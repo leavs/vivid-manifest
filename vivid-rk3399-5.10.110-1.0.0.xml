@@ -42,7 +42,7 @@
   <project name="security" path="external/security" revision="732fd0feeb76fab3b2c39cca479fb316b194cfed"/>
   <project name="xserver" path="external/xserver" revision="c65143d76838990f3dfff1d39b0d62d4ca06f569"/>
   
-  <project name="rockchip_device"  path="device/rockchip"  revision="de99a69da1ef5c502c63d35f6d5e47fa19591670">
+  <project name="rockchip_device"  path="device/rockchip"  revision="e967101f7d81096a26dadc11e3e41b8468792093">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>

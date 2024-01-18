@@ -84,9 +84,9 @@ The rootfs image will be released separatly. You can issue the following command
 $: cd vivid-bsp-release
 $: mkdir debian 
 $: cd debian
-$: wget -c https://xxx/linaro-rootfs-vivid-YYYYMMDD.img.xz
-$: xz -d linaro-rootfs-vivid-YYYYMMDD.img.xz
-$: ln -sf linaro-rootfs-vivid-YYYYMMDD.img linaro-rootfs.img
+$: wget -c https://www.vividunit.com/download/rootfs/rootfs-vivid-latest.img.xz
+$: xz -d rootfs-vivid-latest.img.xz
+$: ln -sf rootfs-vivid-latest.img.xz linaro-rootfs.img
 ```
 
 Build an image:
